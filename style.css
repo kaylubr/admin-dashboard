@@ -190,7 +190,7 @@ p {
 
 .cards-container {
   display: grid;
-  grid-template-columns: repeat(2, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
   grid-auto-rows: 250px;
   gap: 1rem;
   margin: 1rem;
