@@ -188,7 +188,7 @@ p {
   margin-left: 1rem;
 }
 
-.cards {
+.cards-container {
   display: grid;
   grid-template-columns: repeat(2, minmax(250px, 1fr));
   grid-auto-rows: 250px;
@@ -197,7 +197,7 @@ p {
   height: 100%;
 }
 
-.cards > div {
+.card {
   background-color: #eef2ff;
   border-radius: 12px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -205,10 +205,27 @@ p {
   border-left: 7px inset #a5b4fc;
 }
 
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card > div:last-child {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
 .cards p {
   color: var(--main-color);
 }
 
+.card img {
+  cursor: pointer;
+}
+
+/* Announcement section */
 .announcement {
   height: 100%;
 }
@@ -236,6 +253,8 @@ p {
 hr {
   margin: 1.2rem 0px;
 }
+
+/* Family section */
 
 .family {
   margin-top: 32px;
@@ -266,6 +285,8 @@ hr {
   font-weight: 400;
   color: var(--main-color);
 }
+
+/* Hover state of main contents */
 
 .cards > div:hover, 
 .announcement:hover,
