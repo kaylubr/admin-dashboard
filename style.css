@@ -1,6 +1,8 @@
 :root {
   --text-color: white;
   --main-color: #505050;
+  --text-hover-color: #c3c6cf;
+  --header-text-hover-color: rgb(84, 84, 84);
 }
 
 * {
@@ -36,6 +38,12 @@ p {
   margin: 2px;
 }
 
+/* For hovering the name in header */
+.self:hover {
+  cursor: pointer;
+  color: var(--header-text-hover-color);
+}
+
 /* Header style */
 
 .header {
@@ -44,6 +52,14 @@ p {
   background-color: #eef2ff;
   grid-area: header;
   padding: 0px 3rem 0.6rem 3rem;
+}
+
+#search {
+  border-radius: 12px;
+  border: 1px solid transparent;
+  background-color: #e0e7ff;
+  width: 80%;
+  height: 1.9rem;
 }
 
 .search-container {
@@ -62,12 +78,8 @@ p {
   font-weight: bolder;
 }
 
-#search {
-  border-radius: 12px;
-  border: 1px solid transparent;
-  background-color: #e0e7ff;
-  width: 80%;
-  height: 1.9rem;
+.profile-container > img {
+  cursor: pointer;
 }
 
 .profile-container > #profile {
@@ -96,7 +108,7 @@ p {
 }
 
 .intro a:hover {
-  color: rgb(84, 84, 84);
+  color: var(--header-text-hover-color);
 }
 
 .header-btns {
@@ -137,7 +149,7 @@ p {
 }
 
 .nav span:not(#logo-title):hover {
-  color: #c3c6cf;
+  color: var(--text-hover-color);
 }
 
 .nav > ul > li{
