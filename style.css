@@ -136,7 +136,7 @@ p {
   margin-left: 10px;
 }
 
-.nav span:hover {
+.nav span:not(#logo-title):hover {
   color: #c3c6cf;
 }
 
