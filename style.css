@@ -227,13 +227,22 @@ p {
 
 /* Announcement section */
 
-.announcement > div {
+.announcement-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
   background-color: #eef2ff;
   border-radius: 12px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  padding: 1rem 1rem 0px 1rem;
+  padding: 0px 1rem;
   min-width: 30ch;
   height: 90%;
+}
+
+.announcement-card > div:nth-child(2) {
+  width: 100%;
+  border: 1px solid gray;
 }
 
 .announcement p {
@@ -244,11 +253,8 @@ p {
 }
 
 .announcement h4 {
+  margin: 0px 12px 12px 0px;
   font-size: 0.8;
-}
-
-hr {
-  margin: 1.2rem 0px;
 }
 
 /* Family section */
@@ -286,7 +292,7 @@ hr {
 /* Hover state of main contents */
 
 .card:hover, 
-.announcement > div:hover {
+.announcement-card:hover {
   cursor: pointer;
   transform: scale(1.03);
 }
