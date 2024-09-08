@@ -266,7 +266,7 @@ p {
   height: 92%;
   max-height: 100%;;
   background-color: #eef2ff;
-  padding: 2rem 2rem;
+  padding: 1.4rem 1.4rem;
   border-radius: 12px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
@@ -281,6 +281,8 @@ p {
   display: flex;
   align-items: center;
   gap: 1rem;
+  border-radius: 12px;
+  padding: 10px;
   cursor: pointer;
 }
 
@@ -297,3 +299,6 @@ p {
   transform: scale(1.03);
 }
 
+.family-card > div:hover {
+  background-color: #e0e7ff;
+}
